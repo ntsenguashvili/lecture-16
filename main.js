@@ -42,3 +42,29 @@ function profit(salePrice, basePrice){
    return prof=salePrice/100*dif
 }
 console.log(profit(155,67))
+
+//task 5
+
+function findEven(numArray){
+    
+    let x =numArray.filter((number)=>number % 2 ==0)
+    return x;
+}
+
+let evens = findEven([1,3,2,4,7]);
+let evens2 = findEven([3,5,7,88]);
+console.log(`${evens} ; ${evens2}`)
+
+//task 6
+
+let database = [
+    {name:"test1", value: 1},
+    {name:"test2", value: 2},
+    {name:"test3", value: 3},
+]
+
+function findName(nameToFind){
+    return database.find((data) => data.name === nameToFind )
+}
+
+console.log(findName("test2"))
